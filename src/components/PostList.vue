@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h3>Список пользователей</h3>
+  <div class="post_list">
+    <h3>Список записей</h3>
     <post-item v-for="post in posts" :post="post" />
   </div>
 </template>
@@ -18,4 +18,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.post_list {
+  margin-top: 15px;
+}
+</style>

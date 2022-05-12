@@ -1,7 +1,12 @@
 <template>
   <div class="post">
-    <div><strong>Название: </strong>{{ post.title }}</div>
-    <div><strong>Содержание: </strong>{{ post.body }}</div>
+    <div>
+      <div><strong>Название: </strong>{{ post.title }}</div>
+      <div><strong>Содержание: </strong>{{ post.body }}</div>
+    </div>
+    <div class="post__btns">
+      <my-btn class="post__btn" @click="removePost">x</my-btn>
+    </div>
   </div>
 </template>
 
@@ -21,5 +26,8 @@ export default {
   padding: 15px;
   border: 1px solid teal;
   margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>
