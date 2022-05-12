@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <h1 style="margin-bottom: 20px">Страница с постами</h1>
-    <my-btn @click="showDialog">Созадить пост</my-btn>
+    <my-btn @click="showDialog">Создать пост</my-btn>
     <my-dialog v-model:show="dialogVisible">
       <post-form @create="createPost" />
     </my-dialog>
